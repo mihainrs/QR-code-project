@@ -1,0 +1,21 @@
+:root{
+ --White: hsl(0, 0%, 100%);
+ --Lightgray: hsl(212, 45%, 89%);
+ --Grayishblue: hsl(220, 15%, 55%);
+ --Darkblue: hsl(218, 44%, 22%);
+}
+
+body{
+    background-color: var(--Lightgray);
+}
+
+
+.container{
+    width:320px;
+    height:497px;
+    background-color: var(--White);
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    padding:16px 16px 193px 16px;
+}
