@@ -1,21 +1,70 @@
-:root{
- --White: hsl(0, 0%, 100%);
- --Lightgray: hsl(212, 45%, 89%);
- --Grayishblue: hsl(220, 15%, 55%);
- --Darkblue: hsl(218, 44%, 22%);
+/* declaring constant variables to be used throughout the project */
+:root {
+    max-width: 1440px;
+    max-height: 800px;
+    margin: 0 auto;
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
 }
 
-body{
+body {
     background-color: var(--Lightgray);
+    font-size: 15px;
 }
 
 
-.container{
-    width:320px;
-    height:497px;
+
+/* setting up the container */
+.container {
+    width: 320px;
+    height: 497px;
     background-color: var(--White);
-    margin:auto;
-    display:flex;
-    flex-direction:column;
-    padding:16px 16px 193px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 152px;
+    margin-bottom: 151px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 60px;
+    padding-left: 16px;
+    border-radius: 25px;
+}
+
+/* stylizing text */
+.text-part {
+    text-align: center;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* stylizing the qr image */
+#qrcode {
+    border-radius: 15px;
+}
+
+
+/* adjusting size for M mobile phones */
+@media only screen and (max-width:375px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
 }

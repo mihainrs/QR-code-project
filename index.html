@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="styles.css">
-        <title QR code project></title>
-    </head>
-    <body>
-        <main>
-            <div class="container">
-               <img src="./images/image-qr-code.png" alt="QR-Code"></img>
-               <h1 class="header"> Improve your front-end skills by building projects</h1>
-               <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level!</p>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-widtA, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Adding the custom font (variable sizes as I'll be using size 400 for the para and 700 for the header) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title QR code project></title>
+</head>
+
+<body>
+    <main>
+        <!-- creating a div for the container -->
+        <div class="container">
+
+            <!-- adding the QR code image -->
+            <img id="qrcode" src="./images/image-qr-code.png" alt="QR-Code"></img>
+
+            <!-- Text part -->
+            <div class="text-part">
+                <h1 class="header"> Improve your front-end skills by building projects</h1>
+                <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level!</p>
             </div>
-        </main>
-    </body>
+        </div>
+    </main>
+</body>
+
 </html>
